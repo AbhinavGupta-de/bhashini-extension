@@ -37,21 +37,6 @@ function Popup() {
         } catch (error) {
           console.log(error);
         }
-        const token = jsonwebtoken.sign(
-          {
-            data: {
-              userId: "123",
-              name: "John Doe",
-              email: "",
-            },
-          },
-          "secret",
-          { expiresIn: "1h" }
-        );
-        console.log(token);
-
-        try {
-        } catch (error) {}
       },
     });
   };
